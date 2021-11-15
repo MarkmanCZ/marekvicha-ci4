@@ -1,0 +1,115 @@
+main {
+    min-height: calc(100vh - 56px - 56px);
+}
+
+/*Accordion*/
+
+.accordion-item {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header h3 {
+    font-size: 1.5rem !important;
+}
+
+.accordion-item-header::after {
+    content: '\002B';
+    font-size: 2rem;
+    padding-bottom: .8rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.accordion-item-header.active::after {
+    content: '\2212';
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 8px 10px 8px;
+    line-height: 1.5rem;
+    border-top: 2px solid #0275d8;
+}
+
+.accordion-item-body-content p{
+    text-indent: 8px;
+}
+
+/*Cards*/
+.card-setup {
+    margin: 1em auto;
+    width: 22rem;
+}
+
+.card-setup img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.carousel {
+    margin: 0 auto;
+}
+
+.con-carousel {
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.carousel-item {
+    margin: auto;
+    height: 32rem;
+    position: relative;
+}
+
+.overlay-img {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.custom-form {
+    max-width: 600px !important;
+    margin: 0 auto;
+}
+
+/*Alerts*/
+.alert {
+    margin: 0 1rem;
+}
+
+.alert ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .card-setup {
+        width: auto;
+    }
+}

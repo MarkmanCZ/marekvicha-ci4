@@ -1,0 +1,489 @@
+CRITICAL - 2021-11-14 05:19:54 --> reguired is not a valid rule.
+#0 C:\xampp\htdocs\marekvicha\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reguired')
+#1 C:\xampp\htdocs\marekvicha\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('name', 'name', 'Marek V\xC3\xADcha', Array, Array)
+#2 C:\xampp\htdocs\marekvicha\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(131): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-14 05:20:39 --> reguired is not a valid rule.
+#0 C:\xampp\htdocs\marekvicha\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reguired')
+#1 C:\xampp\htdocs\marekvicha\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('name', 'name', 'Marek V\xC3\xADcha', Array, Array)
+#2 C:\xampp\htdocs\marekvicha\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(131): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-14 05:43:45 --> Invalid file: dashbord.php
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashbord.php')
+#1 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashbord', Array, true)
+#2 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(181): view('dashbord')
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashbord()
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-14 05:45:37 --> Undefined variable $user_data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(181): view('dashboard')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:45:53 --> Undefined variable $user_data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(181): view('dashboard')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:46:46 --> Undefined variable $user_data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(181): view('dashboard')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:47:14 --> Undefined variable $user_data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(181): view('dashboard')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:57:48 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:58:09 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:58:14 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:58:30 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:58:31 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:58:46 --> syntax error, unexpected token "if", expecting "," or ";"
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#2 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-14 05:58:50 --> syntax error, unexpected token ";", expecting "]"
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#2 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-14 05:58:54 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 05:58:55 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 06:01:26 --> syntax error, unexpected token "echo"
+#0 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-14 06:01:36 --> Array to string conversion
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 06:01:58 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(187): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 06:02:24 --> Undefined array key "user_data"
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 06:03:16 --> Undefined variable $user_data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(186): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 06:05:35 --> Call to undefined method App\Models\UserModel::fetch_all
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(193): CodeIgniter\Model->__call('fetch_all', Array)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(184): App\Controllers\User->fetch_all()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-14 06:10:52 --> syntax error, unexpected token "*", expecting end of file
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#2 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(187): view('dashboard', Array)
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-14 06:10:58 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(187): view('dashboard', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-14 06:11:09 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(187): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 06:11:50 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(187): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 06:14:59 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(187): view('dashboard', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-14 06:16:05 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(187): view('dashboard', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-14 09:15:02 --> session_unset() expects exactly 0 arguments, 1 given
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(146): session_unset(Array)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 09:15:28 --> CodeIgniter\Session\Session::get(): Argument #1 ($key) must be of type ?string, array given, called in C:\xampp\htdocs\marekvicha\app\Controllers\User.php on line 146
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(146): CodeIgniter\Session\Session->get(Array)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 09:20:44 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha\app\Views\template\nav.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\View\View.php(432): CodeIgniter\View\View->render('/template/nav', NULL, true)
+#4 C:\xampp\htdocs\marekvicha\app\Views\layout.php(10): CodeIgniter\View\View->include('/template/nav')
+#5 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\marekvicha\system\View\View.php(230): CodeIgniter\View\View->render('layout', Array, true)
+#8 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#9 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(41): view('home', Array)
+#10 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->home()
+#11 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#12 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-11-14 09:21:54 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(432): CodeIgniter\View\View->render('/template/nav', NULL, true)
+#2 C:\xampp\htdocs\marekvicha\app\Views\layout.php(10): CodeIgniter\View\View->include('/template/nav')
+#3 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\marekvicha\system\View\View.php(230): CodeIgniter\View\View->render('layout', Array, true)
+#6 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#7 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(41): view('home', Array)
+#8 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->home()
+#9 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-11-14 09:22:26 --> syntax error, unexpected token "else"
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(432): CodeIgniter\View\View->render('/template/nav', NULL, true)
+#2 C:\xampp\htdocs\marekvicha\app\Views\layout.php(10): CodeIgniter\View\View->include('/template/nav')
+#3 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\marekvicha\system\View\View.php(230): CodeIgniter\View\View->render('layout', Array, true)
+#6 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#7 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(41): view('home', Array)
+#8 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->home()
+#9 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-11-14 09:22:53 --> syntax error, unexpected token "}", expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(432): CodeIgniter\View\View->render('/template/nav', NULL, true)
+#2 C:\xampp\htdocs\marekvicha\app\Views\layout.php(10): CodeIgniter\View\View->include('/template/nav')
+#3 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\marekvicha\system\View\View.php(230): CodeIgniter\View\View->render('layout', Array, true)
+#6 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#7 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(41): view('home', Array)
+#8 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->home()
+#9 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-11-14 09:25:10 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-14 09:47:32 --> Undefined array key "a"
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard('a')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 09:47:36 --> Undefined array key "a"
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard('a')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 09:47:49 --> Undefined array key "a"
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard('a')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 09:47:59 --> Undefined array key ""
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-14 10:04:42 --> Unclosed '{' on line 22
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#2 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(197): view('dashboard', Array)
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-14 10:05:04 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp\htdocs\marekvicha\app\Views\dashboard.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(197): view('dashboard', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->dashboard()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 10:07:32 --> Undefined variable $row
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(16): view('cards')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 10:09:42 --> Undefined variable $row
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(17): view('cards', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 10:11:00 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(17): view('cards', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 10:11:12 --> Undefined variable $data
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(17): view('cards', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 10:11:30 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(17): view('cards', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-14 10:11:55 --> Undefined variable $user
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(17): view('cards', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-14 10:12:05 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(17): view('cards', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-14 10:15:08 --> syntax error, unexpected token "return", expecting "function" or "const"
+#0 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

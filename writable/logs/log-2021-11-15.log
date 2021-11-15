@@ -1,0 +1,187 @@
+CRITICAL - 2021-11-15 13:32:15 --> view(): Argument #2 ($data) must be of type array, bool given, called in C:\xampp\htdocs\marekvicha\app\Controllers\User.php on line 161
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(161): view('profile', false)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-15 13:32:53 --> Call to a member function listErrors() on bool
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(161): view('profile', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-15 13:34:08 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email', 'nickname', 'password', 'passwordControl')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:35:02 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email', 'nickname', 'password', 'passwordControl')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:35:20 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email', 'nickname', 'password', 'passwordControl')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:35:40 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email', 'nickname', 'password', 'passwordControl')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:36:21 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email', 'nickname', 'password', 'passwordControl')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:36:29 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:36:41 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:38:05 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:39:13 --> Uninitialized string offset 4
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 175)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite('name', 'email')
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:40:27 --> Undefined array key 2
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 173)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite(Array)
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:40:45 --> Undefined array key 3
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite(Array)
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:42:46 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-15 13:50:44 --> Call to a member function listErrors() on bool
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(160): view('profile', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-15 13:54:57 --> syntax error, unexpected token "=>"
+#0 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\marekvicha\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-15 13:57:42 --> Undefined array key 1
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 169)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite(Array)
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 13:58:11 --> Call to a member function listErrors() on bool
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(161): view('profile', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-15 14:00:53 --> Call to a member function listErrors() on array
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(161): view('profile', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-15 14:04:14 --> Undefined array key 0
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 176)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite(Array)
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 14:04:51 --> Undefined array key 0
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 176)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(158): App\Controllers\User->inputRulesValite(Array)
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-15 14:05:21 --> Call to a member function listErrors() on string
+#0 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#3 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(162): view('profile', Array)
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

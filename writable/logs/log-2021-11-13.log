@@ -1,0 +1,57 @@
+CRITICAL - 2021-11-13 15:02:05 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\marekvicha\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\marekvicha\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-11-13 08:03:21 --> Undefined array key "registred_at"
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 108)
+#1 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(37): App\Controllers\User->setUserMethod(Array)
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->home()
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-13 08:04:20 --> Undefined variable $cardData
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-13 08:04:59 --> view(): Argument #2 ($data) must be of type array, App\Models\UserModel given, called in C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php on line 18
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(18): view('cards', Object(App\Models\UserModel))
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-13 08:05:30 --> view(): Argument #2 ($data) must be of type array, App\Models\UserModel given, called in C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php on line 18
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(18): view('cards', Object(App\Models\UserModel))
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-13 08:06:03 --> Undefined variable $row
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(18): view('cards', Array)
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 08:07:01 --> Undefined variable $row
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(16): view('cards')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

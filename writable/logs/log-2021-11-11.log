@@ -1,0 +1,36 @@
+CRITICAL - 2021-11-11 10:01:18 --> Undefined variable $row
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(12): view('cards')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 10:04:43 --> Call to undefined method App\Models\UserModel::setUserMethod
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\User.php(37): CodeIgniter\Model->__call('setUserMethod', Array)
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\User->home()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:06:10 --> Undefined variable $row
+#0 C:\xampp\htdocs\marekvicha\app\Views\cards.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha\system\Common.php(1097): CodeIgniter\View\View->render('cards', Array, true)
+#4 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(12): view('cards')
+#5 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#6 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 10:15:16 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\marekvicha\app\Controllers\Pages.php(17): App\Controllers\Pages->getCardData(Object(App\Models\UserModel))
+#1 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(824): App\Controllers\Pages->cards()
+#2 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#3 C:\xampp\htdocs\marekvicha\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
