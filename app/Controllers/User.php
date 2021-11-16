@@ -114,18 +114,30 @@ class User extends BaseController {
     }
 
     public function dashboard() {
-        //print_r($params);
-        $data = [];
-        helper('form');
+        $returnData = [];
+
+        $returnData['user_data'] = $this->fetch_all();
+
+        return view('dashboard', $returnData);
+    }
+
+    public function delete($data = []) {
         $model = new UserModel();
-        if($this->request->getMethod() === "get") {
-            $id = $this->request->getGet('id');
+        if(!empty($data[0])) {
+            $id = $data[0];
             $this->deleteUser($model, $id);
         }
-        $data['user_data'] = $this->fetch_all();
-        //print_r($data['user_data']);
+        return $this->dashboard();
+    }
 
-        return view('dashboard', $data);
+    public function edit($data = []) {
+        $model = new UserModel();
+        if(!empty($data[0])) {
+            $id = $data[0];
+            $returnData['user'] = $this->fetch_single_data($id);
+            return view('edit', $returnData);
+        }
+
     }
 
     public function deleteUser($model, $id) {
@@ -156,10 +168,34 @@ class User extends BaseController {
         //update profilu
         if($this->request->getMethod() === "post") {
             //validace a update to do
+            $rules = [
+                'name' => 'required|min_length[3]|max_length[60]',
+                'text' => 'required|min_length[5]|max_length[160]',
+                'password' => 'required|min_length[8]|max_length[255]',
+                'passwordControl' => 'required|matches[password]'
+            ];
+
+            if (!$this->validate($rules)) {
+                $data['validation'] = $this->validator;
+            }
+            else {
+                //update v databazi
+                $model = new UserModel();
+
+                $userData = [
+                    'uName' => $this->request->getVar('name'),
+                    'uPassword' => $this->request->getVar('password'),
+                    'uText' => $this->request->getVar('text')
+                ];
+                $model->update(session()->get('user')['id'], $userData);
+
+                $session = session();
+                $session->setFlashdata('update', 'Úspěšná změna údajů!');
+                return redirect()->to('/profile');
+            }
 
         }
         return view('profile', $data);
 
     }
-    
 }

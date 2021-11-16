@@ -52,9 +52,7 @@
                                         <span aria-hidden="true">×</span>
                                     </button>
                                     <?php
-                                        /*echo $validation->listErrors();*/
-
-                                        print_r($validation);
+                                       echo $validation->listErrors();
                                      ?>
                                 </div>
                             <?php endif; ?>

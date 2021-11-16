@@ -28,8 +28,8 @@
                                         <td>'. $user->uNick.'</td>
                                         <td>'. $user->registred_at.'</td>
                                         <td>'. $user->uGroup.'</td>
-                                        <td><a href="'. base_url('/edit').'"><button type="submit" name="edit" class="btn btn-primary">Edit</button></a></td>
-                                        <td><a href="'. base_url('/dashboard?id='. $user->id) .'"><button type="submit" name="delete" class="btn btn-danger">Delete</button></a></td>
+                                        <td><a href="'. base_url('/dashboard/'. $user->id).'"><button type="submit" name="edit" class="btn btn-primary">Edit</button></a></td>
+                                        <td><a href="'. base_url('/dashboard/'. $user->id .'/delete') .'"><button type="submit" name="delete" class="btn btn-danger">Delete</button></a></td>
                                     </tr>
                                 ';
                                 }
