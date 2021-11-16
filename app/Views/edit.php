@@ -19,30 +19,30 @@
                     <div class="img-thumbnail p-4">
                         <h2>Editace uživatele</h2>
                         <hr>
-                        <form action="/dashboard/edit" method="POST">
+                        <form action="/dashboard/save" method="POST">
                             <div class="form-group">
                                 <label for="uid">ID uživatele</label>
-                                <input type="text" name="uid" readonly class="form-control" value="<?= $user['id'];?>">
+                                <input type="text" name="uid" readonly class="form-control" value="<?= session()->get('user_data')['id']?>">
                             </div>
                             <div class="form-group">
                                 <label for="name">Jméno a Příjmení</label>
-                                <input type="text" class="form-control" name="name" value="<?= $user['uName'];?>">
+                                <input type="text" class="form-control" name="name" value="<?= session()->get('user_data')['uName']?>">
                             </div>
                             <div class="form-group">
                                 <label for="name">Email</label>
-                                <input type="text" class="form-control" name="email" value="<?= $user['uEmail'];?>">
+                                <input type="text" class="form-control" name="email" value="<?= session()->get('user_data')['uEmail']?>">
                             </div>
                             <div class="form-group">
                                 <label for="nickname">Uživatelské jméno</label>
-                                <input type="text" class="form-control" name="nickname" value="<?= $user['uNick'];?>">
+                                <input type="text" class="form-control" name="nickname" value="<?= session()->get('user_data')['uNick']?>">
                             </div>
                             <div class="form-group">
                                 <label for="text">Popisek uživatele</label>
-                                <textarea class="form-control" name="text" cols="30" rows="5" placeholder="<?= $user['uText'];?>"></textarea>
+                                <textarea class="form-control" name="text" cols="30" rows="5" placeholder="<?= session()->get('user_data')['uText']?>"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="group">Skupina</label>
-                                <input type="text" name="group" class="form-control" value="<?= $user['uGroup']?>">
+                                <input type="text" name="group" class="form-control" value="<?= session()->get('user_data')['uGroup']?>">
                             </div>
                             <input type="hidden" name="id" value="<?= session()->get('id');?>">
                             <button class="btn btn-success" type="submit" name="submit">Uložit</button>

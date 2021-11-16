@@ -22,19 +22,19 @@
                         <form action="/profile" method="POST">
                             <div class="form-group">
                                 <label for="name">Jméno a Příjmení</label>
-                                <input type="text" class="form-control" name="name" value="<?= session()->get('user')['name'];?>">
+                                <input type="text" class="form-control" name="name" value="<?= session()->get('user_profile')['uName'];?>">
                             </div>
                             <div class="form-group">
                                 <label for="name">Email</label>
-                                <input type="text" class="form-control" readonly name="email" value="<?= session()->get('user')['email'];?>">
+                                <input type="text" class="form-control" readonly name="email" value="<?= session()->get('user_profile')['uEmail'];?>">
                             </div>
                             <div class="form-group">
                                 <label for="nickname">Uživatelské jméno</label>
-                                <input type="text" class="form-control" name="nickname" value="<?= session()->get('user')['nick'];?>">
+                                <input type="text" class="form-control" name="nickname" value="<?= session()->get('user_profile')['uNick'];?>">
                             </div>
                             <div class="form-group">
                                 <label for="text">Popisek uživatele</label>
-                                <textarea class="form-control" name="text" cols="30" rows="5" placeholder="<?= session()->get('user')['text'];?>"></textarea>
+                                <textarea class="form-control" name="text" cols="30" rows="5" placeholder="<?= session()->get('user_profile')['uText'];?>"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="text">Heslo</label>

@@ -113,7 +113,7 @@ class User extends BaseController {
         return true;
     }
 
-    public function dashboard() {
+    public function dashboard($error = []) {
         $returnData = [];
 
         $returnData['user_data'] = $this->fetch_all();
@@ -134,10 +134,44 @@ class User extends BaseController {
         $model = new UserModel();
         if(!empty($data[0])) {
             $id = $data[0];
-            $returnData['user'] = $this->fetch_single_data($id);
-            return view('edit', $returnData);
+            $userArray = $this->fetch_single_data($id);
+            session()->setFlashdata('user_data', $userArray);
+            return view('edit');
         }
 
+        return redirect()->to('');
+    }
+
+    public function save() {
+        $returnData = [];
+        $model = new UserModel();
+        helper('form');
+        if($this->request->getMethod() === "post") {
+            $rules = [
+                'uid' => 'required',
+                'name' => 'required|min_length[3]|max_length[60]',
+                'email' => 'required|min_length[6]|max_length[128]',
+                'nickname' => 'required|min_length[3]|max_length[40]',
+                'text' => 'required|min_length[5]|max_length[160]',
+                'group' => 'required'
+            ];
+            if(!$this->validate($rules)) {
+                $error['validation'] = $this->validator;
+                return view('edit', $error);
+            }else {
+                $userData = [
+                    'uName' => $this->request->getVar('name'),
+                    'uEmail' => $this->request->getVar('email'),
+                    'uNick' => $this->request->getVar('nickname'),
+                    'uText' => $this->request->getVar('text'),
+                    'uGroup' => $this->request->getVar('group')
+                ];
+                $model->update(session()->get('user')['id'], $userData);
+                return $this->dashboard();
+            }
+        }
+
+        return $this->dashboard();
     }
 
     public function deleteUser($model, $id) {
@@ -148,7 +182,7 @@ class User extends BaseController {
     public function fetch_all() {        
         $model = new UserModel();
 
-        $data = $model->query('SELECT id, uName, uEmail, uNick, uText, registred_at, uGroup FROM users');
+        $data = $model->query('SELECT id, uName, uEmail, uNick, uPassword, uText, registred_at, uGroup FROM users');
         $result = $data->getResult();
 
         return $result;
@@ -195,6 +229,7 @@ class User extends BaseController {
             }
 
         }
+        session()->setFlashdata('user_profile', $this->fetch_single_data(session()->get('user')['id']));
         return view('profile', $data);
 
     }
