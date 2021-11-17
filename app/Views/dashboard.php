@@ -2,7 +2,19 @@
 
 <?= $this->section('content')?>
 <main>
-    <div class="container-wide pt-4">
+    <div class="container pt-4">
+        <section>
+            <?php if(session()->get('delete_error')): ?>
+            <div class="container">
+                <div class="alert alert-danger alert-dismissible text-center mt-1" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <?= session()->get('delete_error');?>
+                </div>
+            </div>
+            <?php endif;?>
+        </section>
         <div class="card img-thumbnail">
             <div class="card-body">
                 <div class="table-responsive">

@@ -40,7 +40,6 @@ class User extends BaseController {
         } else {
             return view("home", $data);
         }
-
         return view('home', $data);
     }
 
@@ -59,7 +58,7 @@ class User extends BaseController {
                 'passwordControl' => 'required|matches[password]',
                 'checkBox' => 'required'
             ];
-
+            
             if (!$this->validate($rules)) {
                 $data['validation'] = $this->validator;
             } else {
@@ -115,7 +114,6 @@ class User extends BaseController {
 
     public function dashboard($error = []) {
         $returnData = [];
-
         $returnData['user_data'] = $this->fetch_all();
 
         return view('dashboard', $returnData);
@@ -125,7 +123,12 @@ class User extends BaseController {
         $model = new UserModel();
         if(!empty($data[0])) {
             $id = $data[0];
-            $this->deleteUser($model, $id);
+            if($id !== session()->get('user')['id']) {                
+                $this->deleteUser($model, $id);
+            }else {
+                //to do message
+                session()->setFlashdata('delete_error', 'Nemůžeš vymazat sám sebe!');
+            }
         }
         return $this->dashboard();
     }
@@ -138,7 +141,6 @@ class User extends BaseController {
             session()->setFlashdata('user_data', $userArray);
             return view('edit');
         }
-
         return redirect()->to('');
     }
 
@@ -147,25 +149,45 @@ class User extends BaseController {
         $model = new UserModel();
         helper('form');
         if($this->request->getMethod() === "post") {
-            $rules = [
-                'uid' => 'required',
-                'name' => 'required|min_length[3]|max_length[60]',
-                'email' => 'required|min_length[6]|max_length[128]',
-                'nickname' => 'required|min_length[3]|max_length[40]',
-                'text' => 'required|min_length[5]|max_length[160]',
-                'group' => 'required'
-            ];
+            if(!empty($this->request->getVar('text'))) {
+                $rules = [
+                    'uid' => 'required',
+                    'name' => 'required|min_length[3]|max_length[60]',
+                    'email' => 'required|min_length[6]|max_length[128]',
+                    'nickname' => 'required|min_length[3]|max_length[40]',
+                    'text' => 'required|min_length[5]|max_length[160]',
+                    'group' => 'required'
+                ];
+            }
+            else {
+                $rules = [
+                    'uid' => 'required',
+                    'name' => 'required|min_length[3]|max_length[60]',
+                    'email' => 'required|min_length[6]|max_length[128]',
+                    'nickname' => 'required|min_length[3]|max_length[40]',
+                    'group' => 'required'
+                ];
+            }             
             if(!$this->validate($rules)) {
                 $error['validation'] = $this->validator;
                 return view('edit', $error);
             }else {
-                $userData = [
-                    'uName' => $this->request->getVar('name'),
-                    'uEmail' => $this->request->getVar('email'),
-                    'uNick' => $this->request->getVar('nickname'),
-                    'uText' => $this->request->getVar('text'),
-                    'uGroup' => $this->request->getVar('group')
-                ];
+                if(!empty($this->request->getVar('text'))) {
+                    $userData = [
+                        'uName' => $this->request->getVar('name'),
+                        'uEmail' => $this->request->getVar('email'),
+                        'uNick' => $this->request->getVar('nickname'),
+                        'uText' => $this->request->getVar('text'),
+                        'uGroup' => $this->request->getVar('group')
+                    ];
+                }else {
+                    $userData = [
+                        'uName' => $this->request->getVar('name'),
+                        'uEmail' => $this->request->getVar('email'),
+                        'uNick' => $this->request->getVar('nickname'),
+                        'uGroup' => $this->request->getVar('group')
+                    ];
+                }              
                 $model->update(session()->get('user')['id'], $userData);
                 return $this->dashboard();
             }
