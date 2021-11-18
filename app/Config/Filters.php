@@ -6,6 +6,9 @@ use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
+use App\Filters\Auth;
+use App\Filters\UsersCheck;
+
 
 class Filters extends BaseConfig
 {
@@ -19,6 +22,9 @@ class Filters extends BaseConfig
         'csrf'     => CSRF::class,
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
+        'auth' => Auth::class,
+        'usercheck' => UsersCheck::class
+
     ];
 
     /**
@@ -29,6 +35,7 @@ class Filters extends BaseConfig
      */
     public $globals = [
         'before' => [
+            'usercheck'
             // 'honeypot',
             // 'csrf',
         ],

@@ -1,0 +1,97 @@
+CRITICAL - 2021-11-18 07:19:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\Auth.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:20:31 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\Auth.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:20:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\Auth.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:20:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\Auth.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:20:33 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\Auth.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:20:41 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\Auth.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:20:43 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\Auth.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:24:01 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Controllers\User.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 254)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(824): App\Controllers\User->profile()
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:29:39 --> Call to a member function getSegment() on null
+#0 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\UsersCheck->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('user/profile', 'before')
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-18 07:30:43 --> Undefined variable $segment
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\UsersCheck.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\UsersCheck->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:30:56 --> Undefined variable $segment
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\UsersCheck.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\UsersCheck->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:30:57 --> Undefined variable $segment
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\UsersCheck.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\UsersCheck->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:31:07 --> Undefined variable $segment
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\UsersCheck.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\UsersCheck->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-18 07:31:08 --> Undefined variable $segment
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Filters\UsersCheck.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\Filters\Filters.php(173): App\Filters\UsersCheck->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,22 @@
+CRITICAL - 2021-11-17 11:24:05 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Views\edit.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha-ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha-ci4\system\Common.php(1097): CodeIgniter\View\View->render('edit', Array, true)
+#4 C:\xampp\htdocs\marekvicha-ci4\app\Controllers\User.php(142): view('edit')
+#5 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(824): App\Controllers\User->edit('1')
+#6 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-17 11:24:21 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\marekvicha-ci4\app\Views\edit.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\marekvicha-ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\marekvicha-ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\marekvicha-ci4\system\Common.php(1097): CodeIgniter\View\View->render('edit', Array, true)
+#4 C:\xampp\htdocs\marekvicha-ci4\app\Controllers\User.php(142): view('edit')
+#5 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(824): App\Controllers\User->edit('4')
+#6 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\marekvicha-ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\marekvicha-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

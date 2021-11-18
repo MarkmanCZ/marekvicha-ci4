@@ -33,11 +33,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->match(['get', 'post'], '/', 'User::home');
 $routes->match(['get', 'post'], '/register', 'User::register');
-$routes->match(['get', 'post'], '/profile', 'User::profile');
-$routes->match(['get', 'post'], '/dashboard', 'User::dashboard');
-$routes->match(['get', 'post'], '/dashboard/save', 'User::save');
-$routes->get('/dashboard/(:num)', 'User::edit/$1');
-$routes->get('/dashboard/(:num)/delete', 'User::delete/$1');
+$routes->match(['get', 'post'], '/profile', 'User::profile', ['filter' => 'auth']);
+$routes->match(['get', 'post'], '/dashboard', 'User::dashboard', ['filter' => 'auth']);
+$routes->match(['get', 'post'], '/dashboard/save', 'User::save', ['filter' => 'auth']);
+$routes->get('/dashboard/(:num)', 'User::edit/$1', ['filter' => 'auth']);
+$routes->get('/dashboard/(:num)/delete', 'User::delete/$1', ['filter' => 'auth']);
 $routes->get('/logout', 'User::logout');
 $routes->get('/karty', 'Pages::cards');
 $routes->get('/progress', 'Pages::progress');
