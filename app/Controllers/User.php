@@ -188,7 +188,7 @@ class User extends BaseController {
                         'uGroup' => $this->request->getVar('group')
                     ];
                 }              
-                $model->update(session()->get('user')['id'], $userData);
+                $model->update(session()->get('user_data')['id'], $userData);
                 return $this->dashboard();
             }
         }
