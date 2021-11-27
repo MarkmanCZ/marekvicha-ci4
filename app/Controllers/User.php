@@ -7,47 +7,64 @@ use App\Validation\UserRules;
 
 class User extends BaseController {
 
+    /**
+     * @return \CodeIgniter\HTTP\RedirectResponse|string
+     * funkce pro domovskou stranku
+     *
+     */
     public function home() {
-        //zaroven forma pro login
+        //prazdny array $data
         $data = [];
+        //heleper funkce formy
         helper('form');
 
+        //overi jestli metoda post nebo get
         if ($this->request->getMethod() == 'post') {
             //validace vsutpu
             $rules = [
                 'email' => 'required|valid_email',
                 'password' => 'required|validateUser[email, password]',
             ];
-
+            //customizovana validace
             $errors = [
                 'password' => [
                     'validateUser' => 'Uživatel není registrován!'
                 ],
             ];
-
+            //pokud neni validace do prazdneho arraye pridej validacni errory
             if (!$this->validate($rules, $errors)) {
                 $data['validation'] = $this->validator;
             } else {
-                //prihlas uzivatele
-
+                //novy usermodel
                 $model = new UserModel();
-
+                //ziskani dat
                 $user = $model->where('uEmail', $this->request->getVar('email'))
                               ->first();
+                //prihlaseni uzivatele
                 $this->setUserMethod($user);
+                //return na dosmovskou stranku
                 return redirect()->to('/');
             }
         } else {
+            //pokud neni validovano ani overeno ani neni uzivatel vraci na domovskou stranku
             return view("home", $data);
         }
+        //zakladni routa na domovskou stranku, i bez prihlaseni
         return view('home', $data);
     }
 
-    public function register()
-    {
+    /**
+     * @return \CodeIgniter\HTTP\RedirectResponse|string
+     * @throws \ReflectionException
+     * funkce pro registraci
+     */
+    public function register() {
+        //prazdny array $data
         $data = [];
+        //heleper funkce formy
         helper('form');
 
+        //overi jestli metoda post nebo get
         if ($this->request->getMethod() == 'post') {
             //validace vsutpu
             $rules = [
@@ -58,14 +75,13 @@ class User extends BaseController {
                 'passwordControl' => 'required|matches[password]',
                 'checkBox' => 'required'
             ];
-            
+            //pokud neni validace do prazdneho arraye pridej validacni errory
             if (!$this->validate($rules)) {
                 $data['validation'] = $this->validator;
             } else {
-                //uloz do databaze
-
+                //novy usermodel
                 $model = new UserModel();
-
+                //pripoj array s daty uzivatele ze vstupu
                 $userData = [
                     'uName' => $this->request->getVar('name'),
                     'uEmail' => $this->request->getVar('email'),
@@ -74,28 +90,43 @@ class User extends BaseController {
                     'uText' => "Váš text",
                     'uGroup' => 1
                 ];
+                //uloz do databaze
                 $model->save($userData);
+                //vytvor sesseion s informaci o registraci
                 $session = session();
                 $session->setFlashdata('succes', 'Úspěšná registrace!');
+                //return na domovskou stranku
                 return redirect()->to('/');
             }
         } else {
+            //neni validace vrat na regiter nebo jiny error
             return view("register", $data);
         }
+        //zakladni routa na registracni stranku
         return view("register", $data);
     }
 
-    public function logout()
-    {
-        if(!session()->get('user')['isLoggedIn'])
-        {
+    /**
+     * @return \CodeIgniter\HTTP\RedirectResponse
+     * funkce pro logout
+     */
+    public function logout() {
+        //pokud neexistuje session user s param. isLoggedIn vrat na domovskou stranku
+        if(!session()->get('user')['isLoggedIn']) {
             return redirect()->to('/');
         }
+        //jinak zrus session a vrat na domovskou stranku
         session()->destroy();
         return redirect()->to('/');
     }
 
+    /**
+     * @param $user
+     * @return bool
+     * funkce pro samostatne prihlaseni uzivatele
+     */
     private function setUserMethod($user) {
+        //array s daty
         $data = [
             'id' => $user['id'],
             'name' => $user['uName'],
@@ -107,48 +138,67 @@ class User extends BaseController {
             'registered' => $user['registred_at'],
             'isLoggedIn' => true,
         ];
-
+        //vytvorim session s arrayem $data
         session()->set('user', $data);
+        //vrat true pro moznou kontrolu zda prihlaseni bylo uspesne
         return true;
     }
 
+    //funkce pro dashboard
     public function dashboard($error = []) {
+        //prazdny array a pak pridani selectnutych dat z databaze
         $returnData = [];
         $returnData['user_data'] = $this->fetch_all();
-
+        //return na dashboard
         return view('dashboard', $returnData);
     }
 
+    /**
+     * @param array $data
+     * @return string
+     * funkce pro delete uzivatele
+     */
     public function delete($data = []) {
+        //novy usermodel
         $model = new UserModel();
+        //pokud data nejsou prazdne tak smazu uzivatele
         if(!empty($data[0])) {
             $id = $data[0];
             if($id !== session()->get('user')['id']) {                
                 $this->deleteUser($model, $id);
             }else {
-                //to do message
                 session()->setFlashdata('delete_error', 'Nemůžeš vymazat sám sebe!');
             }
         }
+        //return na dashboard
         return $this->dashboard();
     }
 
+
+    //funkce pro formou edit, podobna delete
     public function edit($data = []) {
-        $model = new UserModel();
+        //pokud jsou data prazdne redirect na dashboard formu krok zpet
         if(!empty($data[0])) {
             $id = $data[0];
             $userArray = $this->fetch_single_data($id);
             session()->setFlashdata('user_data', $userArray);
             return view('edit');
         }
-        return redirect()->to('');
+        return redirect()->to('/dashboard');
     }
 
+    /**
+     * @return string
+     * @throws \ReflectionException
+     * funkce s formou save
+     */
     public function save() {
-        $returnData = [];
+        //novy usermodel s helperem
         $model = new UserModel();
         helper('form');
+        //overeni jestli je metoda post
         if($this->request->getMethod() === "post") {
+            //2 mosnozti poku neni prazdny text, cekame zmenu textu, jinak ostatni data
             if(!empty($this->request->getVar('text'))) {
                 $rules = [
                     'uid' => 'required',
@@ -192,7 +242,6 @@ class User extends BaseController {
                 return $this->dashboard();
             }
         }
-
         return $this->dashboard();
     }
 
@@ -224,12 +273,18 @@ class User extends BaseController {
         //update profilu
         if($this->request->getMethod() === "post") {
             //validace a update to do
-            $rules = [
-                'name' => 'required|min_length[3]|max_length[60]',
-                'text' => 'required|min_length[5]|max_length[160]',
-                'password' => 'required|min_length[8]|max_length[255]',
-                'passwordControl' => 'required|matches[password]'
-            ];
+            if(!empty($this->request->getVar('text'))) {
+                $rules = [
+                    'name' => 'required|min_length[3]|max_length[60]',
+                    'text' => 'required|min_length[5]|max_length[160]'
+                ];
+            }else {
+                $rules = [
+                    'name' => 'required|min_length[3]|max_length[60]',
+                    'password' => 'required|min_length[8]|max_length[255]',
+                    'passwordControl' => 'required|matches[password]'
+                ]; 
+            }
 
             if (!$this->validate($rules)) {
                 $data['validation'] = $this->validator;
@@ -237,22 +292,26 @@ class User extends BaseController {
             else {
                 //update v databazi
                 $model = new UserModel();
-
-                $userData = [
-                    'uName' => $this->request->getVar('name'),
-                    'uPassword' => $this->request->getVar('password'),
-                    'uText' => $this->request->getVar('text')
-                ];
+                if(!empty($this->request->getVar('text'))) {
+                    $userData = [
+                        'uName' => $this->request->getVar('name'),
+                        'uText' => $this->request->getVar('text')
+                    ];
+                }else {
+                    $userData = [
+                        'uName' => $this->request->getVar('name'),
+                        'uPassword' => $this->request->getVar('password'),
+                        'uText' => $this->request->getVar('text')
+                    ];
+                }
                 $model->update(session()->get('user')['id'], $userData);
 
                 $session = session();
                 $session->setFlashdata('update', 'Úspěšná změna údajů!');
                 return redirect()->to('/profile');
             }
-
         }
         session()->setFlashdata('user_profile', $this->fetch_single_data(session()->get('user')['id']));
         return view('profile', $data);
-
     }
 }
